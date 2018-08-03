@@ -1,0 +1,1 @@
+# resharper-rider-sample-plugin
