@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DefineConstants>$(DefineConstants);RESHARPER</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="JetBrains.ReSharper.SDK" Version="2018.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="RiderModel\*.cs" />
+  </ItemGroup>
+</Project>

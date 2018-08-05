@@ -1,0 +1,17 @@
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+build
+.gradle
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.cache
+
+# IDEs
+.idea
+.vs
+_ReSharper*
+_dotTrace*

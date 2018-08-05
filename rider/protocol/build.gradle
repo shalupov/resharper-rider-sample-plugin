@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib"
+    compile name: "rd-gen"
+    compile name: "rider-model"
+}
+
+repositories {
+    maven { url "https://cache-redirector.jetbrains.com/maven-central" }
+    flatDir {
+        dirs rdLibDirectory.absolutePath
+    }
+}

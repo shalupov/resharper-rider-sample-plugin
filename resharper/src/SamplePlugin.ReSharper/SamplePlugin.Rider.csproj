@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>SamplePlugin.ReSharper</RootNamespace>
+    <DefineConstants>$(DefineConstants);RIDER</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Rider.SDK" Version="2018.*" />
+  </ItemGroup>
+</Project>
