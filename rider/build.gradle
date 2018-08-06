@@ -12,7 +12,7 @@ buildscript {
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.2.50'
-    id 'org.jetbrains.intellij' version '0.3.2'
+    id 'org.jetbrains.intellij' version '0.3.5'
 }
 
 apply plugin: 'com.jetbrains.rdgen'
@@ -22,7 +22,9 @@ ext.isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
 ext.rdLibDirectory = new File(repoRoot, "rider/build/riderRD-2018.2-SNAPSHOT/lib/rd")
 
 wrapper {
+    gradleVersion = '4.9'
     distributionType = Wrapper.DistributionType.ALL
+    distributionUrl = "https://cache-redirector.jetbrains.com/services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
 
 if (!ext.has("BuildConfiguration"))

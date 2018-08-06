@@ -1,3 +1,9 @@
+pluginManagement {
+    repositories {
+        maven { url "https://cache-redirector.jetbrains.com/plugins.gradle.org" }
+    }
+}
+
 rootProject.name = 'sampleplugin-rider'
 
 include ':protocol'
